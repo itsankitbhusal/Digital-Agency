@@ -29,6 +29,7 @@
    font-weight: 700;
     color: var(--sky);
     margin: 1rem;
+    margin-left: 0;
     background-color: transparent;
 }
 .logo p:hover{
@@ -40,9 +41,11 @@
     font-weight: 600;
     text-decoration: none;
     color: var(--sky);
-    padding: 1rem;
+    padding: 1rem 2rem;
+    padding-right: 0;
     background-color: transparent;
 }
+
 .nav-links a:hover{
     cursor: pointer;
     opacity: .7;
@@ -154,4 +157,79 @@ h2{
 }
 .btn span, .btn-sec span{
     margin: .5rem;
+}
+h3{
+    margin-top: 1rem;
+    color: var(--sky);
+    font-family: 'Khula', poppins, sans-serif;
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 1.15em;
+text-align: center;
+}
+.card-wraper{
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+    color: var(--sky);
+    font-size: 1.5em;
+    position: relative;
+    margin-bottom: 1rem;
+}
+h4:after{
+    content:"";
+    position: absolute;
+    border-top: 2px solid var(--black);
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 140%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 50%);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    width: 30%;
+    
+    border-radius: .5rem;
+    background-color: white;
+}
+.card span{
+    font-size: 5em;
+    padding: 2rem;
+}
+.card:hover{
+    box-shadow: 0 0 20px rgb(214, 214, 214);
+    transition: .2s;
+}
+.card-des{
+    color: gray;
+    text-align: center;
+    padding: 1rem;
+}
+.images{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.images img{
+    width: 20%;
+    padding: 0 3rem;
+}
+.image-wraper{
+    margin-top: 3rem;
 }
