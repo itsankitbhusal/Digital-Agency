@@ -29,7 +29,7 @@
    font-size: 1.5em;
    font-weight: 700;
     color: var(--sky);
-    margin: 1rem;
+    margin: 1em;
     margin-left: 0;
     background-color: transparent;
 }
@@ -42,7 +42,7 @@
     font-weight: 600;
     text-decoration: none;
     color: var(--sky);
-    padding: 1rem 2rem;
+    padding: 1em 2em;
     padding-right: 0;
     background-color: transparent;
 }
@@ -57,17 +57,21 @@ section{
     padding: 0 100px;
 }
 .container{
-    padding: 3rem 0;
+    padding: 3em 0;
 }
 .container-wraper{
     display: flex;
     /* align-items: center; */
     justify-content: space-around;
-    gap: auto;
+    position: relative;
 }
 .typo{
-    margin-top: 4rem;
-    width: 50%;
+    margin-top: 4em;
+    width: 75%;
+    font-size: 1em;
+    position: absolute;
+    left: 0;
+    
 }
 h1{
     color: var(--blue);
@@ -75,20 +79,21 @@ h1{
     font-size: 4em;
     font-weight: 800;
     line-height: .9em;
+    letter-spacing: -3px;
 }
 h1 span{
     color: var(--sky);
 }
 .des{
     color: gray;
-    margin: 3rem 0;
+    margin: 3em 0;
     font-weight: 500;
 }
 .btn{
     font-weight: 600;
     background-color: var(--sky);
-    width: 14.63rem;
-    height: 3.1rem;
+    width: 14.63em;
+    height: 3.1em;
     border: none;
     display: flex;
     justify-content: center;
@@ -100,23 +105,29 @@ h1 span{
     text-decoration: none;
 }
 .img{
+    margin-left: 50%;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img img{
-    width: 80%;
-    float: right;
+    width: 100%;
 }
 .img2{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .img2 img{
-    width: 80%;
+    width: 100%;
 }
 .about-typo{
     width: 50%;
 }
 h2{
-    margin-top: 1rem;
+    margin-top: 1em;
     color: var(--sky);
     font-family: 'Khula', poppins, sans-serif;
     font-size: 3em;
@@ -134,14 +145,14 @@ h2{
 } */
 .des-sec{
     color: gray;
-    margin: 1rem 0;
+    margin: 1em 0;
     font-weight: 500;
     text-align: justify;
 }
 .btn-sec{
     font-weight: 400;
     background-color: var(--sky);
-    margin-top: 2rem;
+    margin-top: 2em;
     padding: .7em 2.5em;
     border: none;
     display: flex;
@@ -158,12 +169,12 @@ h2{
     transition: .2s;
 }
 .btn span, .btn-sec span{
-    margin: .5rem;
+    margin: .5em;
 }
 h3{
-    margin-top: 1rem;
+    margin-top: 1em;
     color: var(--sky);
-    font-family: 'Khula', poppins, sans-serif;
+    font-family: poppins, sans-serif;
     font-size: 3em;
     font-weight: 800;
     line-height: 1.15em;
@@ -207,9 +218,8 @@ h3{
     opacity: 0.1;
 } */
 .card-wraper{
-    margin-top: 3rem;
+    margin-top: 3em;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -217,13 +227,13 @@ h4{
     color: var(--sky);
     font-size: 1.5em;
     position: relative;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 h4:after{
     content:"";
     position: absolute;
     border-top: 2px solid var(--black);
-    width: 5rem;
+    width: 5em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -238,11 +248,11 @@ h4:after{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 1em;
+    padding: 1em;
     width: 30%;
     position: relative;
-    border-radius: .5rem;
+    border-radius: .5em;
     background-color: white;
 }
 .card span{
@@ -255,7 +265,7 @@ h4:after{
     
 }
 .card button{
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 .card:hover{
     box-shadow: 0 0 20px rgb(214, 214, 214);
@@ -264,7 +274,7 @@ h4:after{
 .card-des{
     color: gray;
     text-align: center;
-    padding: 1rem;
+    padding: 1em;
 }
 .images{
 
@@ -275,18 +285,18 @@ h4:after{
 }
 .images img{
     width: 20%;
-    padding: 0 3rem;
+    padding: 0 3em;
 }
 .image-wraper{
-    margin-top: 3rem;
+    margin-top: 3em;
 }
 .project-image-wraper{
     width: 100%;
-    margin: 3rem 0; 
+    margin: 3em 0; 
 }
 .project-images{
     display: flex;
-    gap: 1rem;
+    gap: 1em;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -310,20 +320,20 @@ form{
     width: 45%;
 }
 form input{
-    margin-top: 1rem;
-    padding: .6rem;
+    margin-top: 1em;
+    padding: .6em;
     background-color: transparent;
     border: 1px solid var(--sky);
 }
 form textarea{
-    margin-top: 1rem;
+    margin-top: 1em;
     background-color: transparent;
     border: 1px solid var(--sky);
 }
 .submit{
-    margin-top: 1rem;
-    width: 7rem;
-    padding: .5rem;
+    margin-top: 1em;
+    width: 7em;
+    padding: .5em;
     background-color: var(--sky);
     border: none;
     color: var(--white);
@@ -332,22 +342,28 @@ textarea {
     resize: none;
  }
 ::placeholder{
-    padding: 1rem;
+    padding: 1em;
 }
 .contact-section{
-    padding-bottom: 3rem;
+    padding-bottom: 3em;
 }
 .contact-form{
-    padding: 3rem 0;
+    padding: 3em 0;
 }
 .map{
     background-color: var(--white);
+    height: 450px;
+}
+.map-bg{
+    background-color: var(--white);
 }
 .footer-wraper{
-    padding: 3rem 100px;
+    padding: 3em 100px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+}
+.bluebond{
+    font-size: 1.5em;
 }
 .about,.address, .useul-links, .download{
     width: 20%;
@@ -368,49 +384,56 @@ textarea {
 .about-des{
     font-size: .8em;
     color: gray;
-    width: 180px;
+    width: 11.25em;
 }
 .links{
-    margin: 1rem 0;
+    margin: 1em 0;
     display: flex;
-    gap: 1rem;
+    gap: 1em;
 }
 .links a{
     text-decoration: none;
     color: var(--sky);
+    font-size: .8em;
 }
 h5{
     font-size: 1em;
     font-weight: bold;
     color: var(--sky);
-    margin: 1rem 0;
+    margin: 1em 0;
 }
 .address{
     color: gray;
 }
 .address span{
+    font-size: .8em;
     color: var(--sky);
-    padding: .2rem .5rem;
-    width: 2rem;
+    padding: .2em 0;
+    width: 2em;
     text-align: center;
 }
 .address a{
     text-decoration: none;
+    color: gray;
+    font-size: .8em;
     font-family: poppins, sans-serif;
 }
 .useul-links a{
     text-decoration: none;
     color: gray;
+    font-size: .8em;
     
 }
 .download a{
     text-decoration: none;
     color: gray;
+    font-size: .8em;
 }
 .download span{
-    width: 2rem;
     color: var(--sky);
     text-align: center;
+    font-size: .8em;
+    width: 2em;
 }
 footer{
     background-color: var(--white);
@@ -418,8 +441,113 @@ footer{
 .footer-copyright{
     background-color: var(--sky);
     color: white;
-    padding: 2rem;
+    padding: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.projects{
+    font-size: 1em;
+}
+.contact{
+    font-size: 1em;
+}
+.languages{
+    font-size: 1em;
+}
+.services{
+    font-size: 1em;
+}
+@media screen  and (max-width: 768px) {
+    .navbar-wraper{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 30px 0;
+    }
+    .nav-links{
+        display: block;
+    
+    }
+    .logo p, .nav-links a{
+        padding: 1em 1em;
+    }
+    .logo p:hover ,.nav-links a:hover{
+        background-color: var(--sky);
+        color: var(--white);
+    }
+    section{
+        padding: 0 25px;
+    }
+
+    .typo{
+        font-size: .8em;
+    }
+    h1{
+        line-height: .8em;
+    }
+    .about-typo{
+        font-size: .8em;
+    }
+    .card-wraper{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 40%;
+        height: 35em;
+    }
+    .services{
+        font-size: .8em;
+    }
+    .languages{
+        font-size: .8em;
+    }
+    .projects{
+        font-size: .8em;
+    }
+    .contact{
+        font-size: .8em;
+    }
+    .map{
+        height: 250px;
+    }
+    .footer-wraper{
+        padding: 3em 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .address, .useul-links, .download{
+        width: 30%;
+        text-align: center;
+    }
+   .about{
+    width: 100%;
+    text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+   .about-des{
+       width: 25em;
+   }
+    .links{
+        width: 15rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer-copyright{
+        font-size: .8em;
+    }
+    .services .btn{
+        padding: 1em 0;
+    }
+    .download{
+       text-align: left;
+    }
+    .address{
+        text-align: left;
+    }
 }
