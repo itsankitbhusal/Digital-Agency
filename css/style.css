@@ -3,6 +3,7 @@
     --blue: #0B132A;
     --black: #343434;
     --white: #F5F5F5;
+    --content1: "About US";
 }
 *{
     margin: 0;
@@ -53,9 +54,10 @@
 }
 section{
     background-color: var(--white);
+    padding: 0 100px;
 }
 .container{
-    padding: 3rem 100px;
+    padding: 3rem 0;
 }
 .container-wraper{
     display: flex;
@@ -120,7 +122,7 @@ h2{
     font-size: 3em;
     font-weight: 800;
     line-height: 1.15em;
-    /* position: relative; */
+    position: relative;
 }
 /* h2::before{
     content: "About Us";
@@ -165,8 +167,45 @@ h3{
     font-size: 3em;
     font-weight: 800;
     line-height: 1.15em;
-text-align: center;
+    text-align: center;
+    position: relative;
 }
+/* #OurServices::before{
+    content: "Our Services";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    right: 0px;
+    font-size: 3em;
+    opacity: 0.1;
+}
+#AboutUs::before{
+    content: "About Us";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    right: 0px;
+    font-size: 2em;
+    opacity: 0.1;
+}
+#LanguagesUsed::before{
+    content: "Languages Used";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    right: 0px;
+    font-size: 3em;
+    opacity: 0.1;
+}
+#SomeProjects::before{
+    content: "Some Projects";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    right: 0px;
+    font-size: 3em;
+    opacity: 0.1;
+} */
 .card-wraper{
     margin-top: 3rem;
     display: flex;
@@ -202,13 +241,21 @@ h4:after{
     margin: 1rem;
     padding: 1rem;
     width: 30%;
-    
+    position: relative;
     border-radius: .5rem;
     background-color: white;
 }
 .card span{
-    font-size: 5em;
-    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card span img{
+    width: 80%;
+    
+}
+.card button{
+    margin-bottom: 2rem;
 }
 .card:hover{
     box-shadow: 0 0 20px rgb(214, 214, 214);
@@ -232,4 +279,97 @@ h4:after{
 }
 .image-wraper{
     margin-top: 3rem;
+}
+.project-image-wraper{
+    width: 100%;
+    margin: 3rem 0; 
+}
+.project-images{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+.project-images img{
+    width: 30%;
+}
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-form img{
+    width: 45%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+form input{
+    margin-top: 1rem;
+    padding: .6rem;
+    background-color: transparent;
+    border: 1px solid var(--sky);
+}
+form textarea{
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--sky);
+}
+.submit{
+    margin-top: 1rem;
+    width: 7rem;
+    padding: .5rem;
+    background-color: var(--sky);
+    border: none;
+    color: var(--white);
+}
+textarea {
+    resize: none;
+ }
+::placeholder{
+    padding: 1rem;
+}
+.contact-section{
+    padding-bottom: 3rem;
+}
+.contact-form{
+    padding: 3rem 0;
+}
+footer{
+    margin: 3rem 100px;
+}
+.footer-wraper{
+    display: flex;
+    justify-content: space-between;
+}
+.about{
+    width: 30%;
+}
+.address{
+    width: 30%;
+}
+.useul-links{
+    width: 30%;
+}
+.h5{
+    font-size: 1em;
+    color: var(--sky);
+}
+.about-des{
+    font-size: .8em;
+    color: gray;
+}
+.links{
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+}
+.links a{
+    text-decoration: none;
+    color: var(--sky);
 }
