@@ -340,22 +340,27 @@ textarea {
 .contact-form{
     padding: 3rem 0;
 }
-footer{
-    margin: 3rem 100px;
+.map{
+    background-color: var(--white);
 }
 .footer-wraper{
+    padding: 3rem 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-.about{
-    width: 30%;
+.about,.address, .useul-links, .download{
+    width: 20%;
 }
-.address{
+/* .address{
     width: 30%;
 }
 .useul-links{
     width: 30%;
 }
+.download{
+    width: 30%;
+} */
 .h5{
     font-size: 1em;
     color: var(--sky);
@@ -363,6 +368,7 @@ footer{
 .about-des{
     font-size: .8em;
     color: gray;
+    width: 180px;
 }
 .links{
     margin: 1rem 0;
@@ -372,4 +378,48 @@ footer{
 .links a{
     text-decoration: none;
     color: var(--sky);
+}
+h5{
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--sky);
+    margin: 1rem 0;
+}
+.address{
+    color: gray;
+}
+.address span{
+    color: var(--sky);
+    padding: .2rem .5rem;
+    width: 2rem;
+    text-align: center;
+}
+.address a{
+    text-decoration: none;
+    font-family: poppins, sans-serif;
+}
+.useul-links a{
+    text-decoration: none;
+    color: gray;
+    
+}
+.download a{
+    text-decoration: none;
+    color: gray;
+}
+.download span{
+    width: 2rem;
+    color: var(--sky);
+    text-align: center;
+}
+footer{
+    background-color: var(--white);
+}
+.footer-copyright{
+    background-color: var(--sky);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
