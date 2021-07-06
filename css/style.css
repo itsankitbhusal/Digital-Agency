@@ -11,6 +11,8 @@
     box-sizing: border-box;
    font-family: poppins, sans-serif;
    font-size: 1em;
+   min-height: 0;
+   min-width: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -284,7 +286,7 @@ h4:after{
     position: relative;
 }
 .images img{
-    width: 20%;
+    width: 30%;
     padding: 0 3em;
 }
 .image-wraper{
@@ -458,6 +460,30 @@ footer{
 .services{
     font-size: 1em;
 }
+.control-c1{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: var(--sky);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+
+}
+.control-c2{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: var(--sky);
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+    cursor: pointer;
+}
 @media screen and (max-width: 1024px) {
     .img{
         width: 50%;
@@ -609,7 +635,7 @@ footer{
         flex-wrap: wrap;
     }
     .images img{
-        width: 30%;
+       
         margin: 1rem;
     }
     .about-typo{
@@ -662,7 +688,7 @@ footer{
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
     .nav-links{
         display: flex;
         flex-direction: column;
