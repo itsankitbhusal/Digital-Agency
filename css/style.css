@@ -106,7 +106,7 @@ h1 span{
 }
 .img{
     margin-left: 50%;
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -458,6 +458,12 @@ footer{
 .services{
     font-size: 1em;
 }
+@media screen and (max-width: 1024px) {
+    .img{
+        width: 50%;
+    }
+    
+}
 @media screen  and (max-width: 768px) {
     .navbar-wraper{
         flex-wrap: wrap;
@@ -474,6 +480,9 @@ footer{
     .logo p:hover ,.nav-links a:hover{
         background-color: var(--sky);
         color: var(--white);
+    }
+    .img img{
+        width: 100%;
     }
     section{
         padding: 0 25px;
@@ -549,5 +558,133 @@ footer{
     }
     .address{
         text-align: left;
+    }
+}
+@media screen and (max-width: 540px) {
+    .container-wraper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 3em;
+    }
+    .container{
+        font-size: .8rem;
+    }
+    .typo{
+        margin-top: 10rem;
+        flex: 2;
+        width: 100%;
+        text-align: center;
+        opacity: 100%;
+    }
+    h1{
+        letter-spacing: normal;
+        line-height: 1em;
+    }
+    .typo btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img{
+        margin: 0;
+        width: 100%;
+        
+    }
+    .img img{
+        width: 100%;
+        opacity: .5;
+        /* filter: blur(5px); */
+        opacity: .2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .butttton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .images{
+        flex-wrap: wrap;
+    }
+    .images img{
+        width: 30%;
+        margin: 1rem;
+    }
+    .about-typo{
+        text-align: center;
+        width: 100%;
+    }
+    .container-wraper .img2{
+        width: 80%;
+      
+    }
+    .des-sec{
+        text-align: center;
+    }
+    .card-wraper{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+    }
+    .project-images{
+        flex-direction: column;
+    }
+    .project-images img{
+        width: 80%;
+    }
+    .contact-form{
+        flex-direction: column;
+        position: relative;
+    }
+    .contact-form img{
+        width: 80%;
+        position: absolute;
+        z-index: 0;
+        opacity: .2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-wraper{
+        flex-direction: column;
+    }    
+    .address, .useul-links, .download{
+        width: 100%;
+        text-align: center;
+    }
+    form{
+        width: 70%;
+    }
+
+}
+
+
+@media screen and (max-width: 420px) {
+    .nav-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        font-size: .5em;
+    }
+    .typo{
+        margin-top: 1rem;
+    }
+    .projects h3{
+        font-size: 4em;
+    }
+    .contact-section{
+        font-size: .6em;
+    }
+    .about-des{
+        width: 80%;
+    }
+    .footer-copyright{
+        font-size: .6em;
     }
 }
