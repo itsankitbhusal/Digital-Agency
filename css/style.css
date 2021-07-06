@@ -457,6 +457,9 @@ footer{
 .languages{
     font-size: 1em;
 }
+#LanguagesUsed{
+    margin-bottom: 5rem;
+}
 .services{
     font-size: 1em;
 }
