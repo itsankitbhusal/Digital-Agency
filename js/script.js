@@ -1,5 +1,5 @@
 $(".responsive").slick({
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 2000,
@@ -11,7 +11,7 @@ $(".responsive").slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
         dots: false,
@@ -22,7 +22,7 @@ $(".responsive").slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 1,
       },
     },
@@ -58,3 +58,10 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+const  toggleBtn = document.getElementById('toggle-btn')
+const navLinks = document.getElementsByClassName('nav-links')[0]
+// console.log(toggleBtn);
+toggleBtn.addEventListener('click', () =>{
+  navLinks.classList.toggle('active')
+})
