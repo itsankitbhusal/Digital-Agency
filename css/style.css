@@ -288,8 +288,9 @@ h4:after {
   padding: 1em;
 }
 .images {
-  /* grid-template-columns: 100% ; */
-  transform: scale(.7);
+  /* grid-template-columns: 80% ; */
+  transform: scale(.9);
+  /* width: 100%; */
 }
 .images img {
   padding: 1em 5em;
@@ -470,6 +471,9 @@ footer {
 }
 #LanguagesUsed {
   margin-bottom: 5rem;
+}
+.languages{
+  width: 100%;
 }
 .services {
   font-size: 1em;
