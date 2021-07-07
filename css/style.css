@@ -279,14 +279,11 @@ h4:after {
   padding: 1em;
 }
 .images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  /* grid-template-columns: 100% ; */
+  transform: scale(.7);
 }
 .images img {
-  width: 30%;
-  padding: 0 3em;
+  padding: 1em 5em;
 }
 .image-wraper {
   margin-top: 3em;
@@ -457,6 +454,10 @@ footer {
 }
 .languages {
   font-size: 1em;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-columns: 100% ;
 }
 #LanguagesUsed {
   margin-bottom: 5rem;
@@ -501,7 +502,7 @@ footer {
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: .8em; /* Some padding */
-    border-radius: 50%; /* Rounded corners */
+    border-radius: .5em; /* Rounded corners */
     font-size: 1.2em; /* Increase font size */
   }
   
@@ -512,8 +513,20 @@ footer {
   .img {
     width: 50%;
   }
+  .control-c1{
+    top: 30%;
+  }
+  .control-c2{
+    top: 30%;
+  }
 }
 @media screen and (max-width: 768px) {
+  .control-c1{
+    top: 20%;
+  }
+  .control-c2{
+    top: 20%;
+  }
   .navbar-wraper {
     flex-wrap: wrap;
     flex-direction: column;
@@ -613,6 +626,22 @@ footer {
   }
 }
 @media screen and (max-width: 540px) {
+  .control-c1{
+    top: 30%;
+  }
+  .control-c2{
+    top: 30%;
+    
+  }
+  .control-c1 i, .control-c2 i{
+    font-size: 1rem;
+  }
+  .topbtn{
+    transform: scale(.6);
+  }
+  /* .images {
+    transform: scale(.8);
+  } */
   .container-wraper {
     flex-direction: column;
     justify-content: center;
