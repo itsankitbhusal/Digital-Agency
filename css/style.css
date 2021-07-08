@@ -30,28 +30,31 @@
   font-family: poppins, sans-serif;
   font-size: 1.5em;
   font-weight: 700;
-  color: var(--sky);
+  color: var(--blue);
   margin: 1em;
   margin-left: 0;
   background-color: transparent;
 }
 .logo p:hover {
   cursor: pointer;
-  opacity: 0.7;
+  transition: .2s;
+  opacity: .7;
   transition: 0.2s;
 }
 .nav-links a {
   font-weight: 600;
   text-decoration: none;
-  color: var(--sky);
+  color: var(--blue);
   padding: 1em 2em;
   padding-right: 0;
   background-color: transparent;
 }
-
+button{
+  border-radius: .1em;
+}
 .nav-links a:hover {
   cursor: pointer;
-  opacity: 0.7;
+  opacity: .7;
   transition: 0.2s;
 }
 #toggle-btn{
@@ -371,13 +374,15 @@ textarea {
   justify-content: space-between;
 }
 .bluebond {
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
 }
-.about,
 .address,
 .useul-links,
 .download {
   width: 20%;
+}
+.about{
+  width: 30%;
 }
 /* .address{
     width: 30%;
@@ -388,17 +393,14 @@ textarea {
 .download{
     width: 30%;
 } */
-.h5 {
-  font-size: 1em;
-  color: var(--sky);
-}
+
 .about-des {
   font-size: 0.8em;
   color: gray;
-  width: 11.25em;
+  width: 75%;
 }
 .links {
-  margin: 1em 0;
+  margin-top: 1.5em;
   display: flex;
   gap: 1em;
 }
@@ -475,33 +477,9 @@ footer {
 .languages{
   width: 100%;
 }
+
 .services {
   font-size: 1em;
-}
-.control-c1 {
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: var(--sky);
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  display: block;
-  z-index: 1;
-}
-.control-c2 {
-  width: 30px;
-  height: 30px;
-  border: none;
-  background-color: var(--sky);
-  color: white;
-  border-radius: 50%;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 100%;
 }
 #myBtn {
     display: none; /* Hidden by default */
@@ -514,31 +492,25 @@ footer {
     background-color: var(--sky); /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: .8em; /* Some padding */
-    border-radius: .5em; /* Rounded corners */
+    padding: 0em; /* Some padding */
+    width:  2.5em;
+    height: 2.5em;
+    border-radius: 50%; /* Rounded corners */
     font-size: 1.2em; /* Increase font size */
+    box-shadow: 5px 5px 20px -5px gray;
   }
   
   #myBtn:hover {
-    background-color: var(--blue); /* Add a dark-grey background on hover */
+    box-shadow: 5px 5px 20px -5px rgb(68, 68, 68);
+    transition: .2s;
   }
 @media screen and (max-width: 1024px) {
   .img {
     width: 50%;
   }
-  .control-c1{
-    top: 30%;
-  }
-  .control-c2{
-    top: 30%;
-  }
-}
 @media screen and (max-width: 768px) {
-  .control-c1{
-    top: 20%;
-  }
-  .control-c2{
-    top: 20%;
+  .item{
+    transform: scale(.7);
   }
   .navbar-wraper {
     flex-wrap: wrap;
@@ -644,17 +616,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .control-c1{
-    top: 30%;
-  }
-  .control-c2{
-    top: 30%;
-    
-  }
-  .control-c1 i, .control-c2 i{
-    font-size: 1rem;
   }
   .topbtn{
     transform: scale(.6);

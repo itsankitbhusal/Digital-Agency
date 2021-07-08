@@ -1,44 +1,21 @@
-$(".responsive").slick({
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  prevArrow:
-    "<button type='button' class='slick-prev control-c1 pull-left center'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-  nextArrow:
-    "<button type='button' class='slick-next control-c2 pull-right center'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false,
-        mobileFirst:true,
-        variableWidth: true,
+$('.owl-carousel').owlCarousel({
+  loop:true,
+  margin:10,
+  nav:false,
+  autoplay:true,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:2
       },
-    },
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1,
+      768:{
+          items:3
       },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ],
-});
-
+      1024:{
+          items:4
+      }
+  }
+})
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
@@ -46,7 +23,7 @@ mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
