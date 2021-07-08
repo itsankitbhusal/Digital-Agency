@@ -211,42 +211,6 @@ h3 {
   text-align: center;
   position: relative;
 }
-/* #OurServices::before{
-    content: "Our Services";
-    position: absolute;
-    bottom: -5px;
-    left: 0px;
-    right: 0px;
-    font-size: 3em;
-    opacity: 0.1;
-}
-#AboutUs::before{
-    content: "About Us";
-    position: absolute;
-    bottom: -5px;
-    left: 0px;
-    right: 0px;
-    font-size: 2em;
-    opacity: 0.1;
-}
-#LanguagesUsed::before{
-    content: "Languages Used";
-    position: absolute;
-    bottom: -5px;
-    left: 0px;
-    right: 0px;
-    font-size: 3em;
-    opacity: 0.1;
-}
-#SomeProjects::before{
-    content: "Some Projects";
-    position: absolute;
-    bottom: -5px;
-    left: 0px;
-    right: 0px;
-    font-size: 3em;
-    opacity: 0.1;
-} */
 .card-wraper {
   margin-top: 3em;
   display: flex;
@@ -284,6 +248,7 @@ h4:after {
   position: relative;
   border-radius: 0.5em;
   background-color: white;
+  height: 25rem;
 }
 .card span {
   display: flex;
@@ -322,15 +287,27 @@ h4:after {
   margin: 3em 0;
 }
 .project-images {
-  display: flex;
-  gap: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  /* grid-template-columns: repeat(3, 1fr); */
 }
-.project-images img {
-  width: 30%;
+.pimg img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: .2s;
+}
+.pimg{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.pimg img:hover{
+  transform: scale(1.2);
+  transition: .5s ease-in-out;
 }
 .contact-form {
   display: flex;
@@ -528,6 +505,7 @@ footer {
   .item{
     transform: scale(.7);
   }
+  
   .navbar-wraper {
     flex-wrap: wrap;
     flex-direction: column;
@@ -566,7 +544,7 @@ footer {
   }
   .card {
     width: 40%;
-    height: 35em;
+    height: 22rem;
   }
   .services {
     font-size: 0.8em;
@@ -755,6 +733,7 @@ footer {
     margin: 0;
     padding: 0;
   }
+  
   #toggle-btn{
     display: flex;
     position: absolute;
