@@ -63,7 +63,7 @@ button{
   right: 2rem;
   font-size: 1.5em;
   cursor: pointer;
-  color: var(--sky);
+  color: var(--blue);
   display: none;
 }
 section {
@@ -482,22 +482,22 @@ footer {
   font-size: 1em;
 }
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: var(--sky); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 0em; /* Some padding */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none; 
+    background-color: var(--white); 
+    color: var(--sky);
+    cursor: pointer;
+    padding: 0em;
     width:  2.5em;
     height: 2.5em;
-    border-radius: 50%; /* Rounded corners */
-    font-size: 1.2em; /* Increase font size */
-    box-shadow: 5px 5px 20px -5px gray;
+    border-radius: 50%;
+    font-size: 1.2em;
+    box-shadow: 10px 10px 20px -10px gray;
   }
   
   #myBtn:hover {
@@ -524,7 +524,6 @@ footer {
   .nav-links a {
     padding: 1em 1em;
   }
-  .logo p:hover,
   .nav-links a:hover {
     background-color: var(--sky);
     color: var(--white);
@@ -538,6 +537,7 @@ footer {
 
   .typo {
     font-size: 0.8em;
+    opacity: 1;
   }
   h1 {
     line-height: 0.8em;
@@ -722,7 +722,10 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
-  .navbar-wraper{
+  section{
+    overflow: hidden;
+  }
+ .navbar-wraper{
     padding: 3rem 0;
   }
   .logo{
@@ -770,8 +773,54 @@ footer {
   .container {
     font-size: 0.5em;
   }
+  .img{
+    margin-top: 15%;
+    width: 150%;
+    overflow: hidden;
+  }
   .typo {
-    margin-top: 1rem;
+    margin-top:  15%;
+    z-index: 1;
+  }
+  .typo h1{
+   font-size: 2.5rem;
+  }
+  .des{
+    font-size: .9rem;
+  }
+  .btn{
+    /* transform: scale(2); */
+    font-size: 1rem;
+  }
+  .about-typo{
+    font-size: .8rem;
+  }
+  .img2{
+    transform: scale(1.5);
+    margin: 3rem 0;
+  }
+  .btn-sec{
+    transform: scale(1.2);
+  }
+  .card{
+    height: 20rem;
+  }
+  .btn{
+   transform: scale(0.7);
+  }
+  form{
+    z-index: 1;
+  }
+ .address, .useul-links, .download{
+   text-align: center;
+
+ }
+ /* .address h5, .useul-links h5, .download h5{
+  text-align: center;
+} */
+  .des-sec{
+    font-size: 1rem;
+    text-align: justify;
   }
   .projects h3 {
     font-size: 4em;
@@ -785,4 +834,8 @@ footer {
   .footer-copyright {
     font-size: 0.6em;
   }
+  .card-des{
+    font-size: .6rem;
+  }
+}
 }
