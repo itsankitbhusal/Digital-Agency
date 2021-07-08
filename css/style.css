@@ -49,9 +49,9 @@
   padding-right: 0;
   background-color: transparent;
 }
-button{
-  border-radius: .1em;
-}
+/* button{
+  border-radius: .2em;
+} */
 .nav-links a:hover {
   cursor: pointer;
   opacity: .7;
@@ -105,13 +105,18 @@ h1 span {
 .btn {
   font-weight: 600;
   background-color: var(--sky);
-  width: 14.63em;
+  width: 12em;
   height: 3.1em;
   border: none;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+.btn-text{
+  opacity: 100%;
+  margin: -.5em -1.7em -.5em -1.7em;
+  padding: .5em  1.7em  .5em  1.7em;
 }
 .btn a {
   color: var(--white);
@@ -166,7 +171,7 @@ h2 {
   font-weight: 400;
   background-color: var(--sky);
   margin-top: 2em;
-  padding: 0.7em 2.5em;
+  padding: 0.3em .8em;
   border: none;
   display: flex;
   justify-content: center;
@@ -176,12 +181,22 @@ h2 {
 .btn-sec a {
   color: var(--white);
   text-decoration: none;
+  text-align: center;
+  font-size: .8em;
+  padding: 0 .7em;
 }
-.btn:hover,
-.btn-sec:hover {
-  background-color: var(--blue);
-  transition: 0.2s;
+.btn:hover{
+  background-color: transparent;
+  border: 1.5px solid var(--sky);
+  color: var(--sky);
+  transition: 0.2s ease-in-out;
 }
+.btn-text:hover{
+  color: var(--sky);
+  transition: 0.2s ease-in-out;
+
+}
+
 .btn span,
 .btn-sec span {
   margin: 0.5em;
@@ -282,6 +297,7 @@ h4:after {
   margin-bottom: 2em;
 }
 .card:hover {
+  transform: scale(1.02);
   box-shadow: 0 0 20px rgb(214, 214, 214);
   transition: 0.2s;
 }
@@ -803,7 +819,7 @@ footer {
     transform: scale(1.2);
   }
   .card{
-    height: 20rem;
+    height: auto;
   }
   .btn{
    transform: scale(0.7);
