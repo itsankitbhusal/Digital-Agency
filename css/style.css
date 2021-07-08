@@ -819,8 +819,9 @@ footer {
   text-align: center;
 } */
   .des-sec{
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: justify;
+    font-weight: 400;
   }
   .projects h3 {
     font-size: 4em;
