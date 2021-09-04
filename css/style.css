@@ -287,7 +287,6 @@ h4:after {
 }
 /* /////////////////////////// */
 .project-images{
-  height: 350px;
   margin-top: 2rem;
   display: flex;
   column-count: 3;
