@@ -296,7 +296,7 @@ h4:after {
   /* overflow: hidden; */
 }
 .pimg img{
-width: 350px;
+width: 25vw;
 object-fit: cover;
 cursor: pointer;
 filter: brightness(.8);
