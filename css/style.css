@@ -13,7 +13,6 @@
   min-height: 0;
   min-width: 0;
   scroll-behavior: smooth;
-
 }
 @import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
@@ -25,39 +24,42 @@
   font-size: 1em;
   padding: 0 100px;
   z-index: 20;
+  background-color: var(--sky);
 }
 .logo p {
   font-family: poppins, sans-serif;
   font-size: 1.5em;
   font-weight: 700;
-  color: var(--blue);
-  margin: 1em;
+  color: var(--white);
+  padding: 1rem 2rem;
   margin-left: 0;
   background-color: transparent;
 }
 .logo p:hover {
   cursor: pointer;
-  transition: .2s;
-  opacity: .7;
+  opacity: 0.7;
   transition: 0.2s;
+}
+.logo {
+  margin-left: -2rem;
 }
 .nav-links a {
   font-weight: 600;
   text-decoration: none;
-  color: var(--blue);
-  padding: 1em 2em;
-  padding-right: 0;
+  color: var(--white);
+  padding: 1rem 1.5rem;
   background-color: transparent;
 }
-/* button{
-  border-radius: .2em;
-} */
+
 .nav-links a:hover {
   cursor: pointer;
-  opacity: .7;
+  opacity: 0.7;
   transition: 0.2s;
+  background-color: var(--sky);
+  border-radius: 3px;
+  color: var(--white);
 }
-#toggle-btn{
+#toggle-btn {
   position: absolute;
   top: 2rem;
   right: 2rem;
@@ -75,7 +77,6 @@ section {
 }
 .container-wraper {
   display: flex;
-  /* align-items: center; */
   justify-content: space-around;
   position: relative;
 }
@@ -86,6 +87,7 @@ section {
   position: absolute;
   left: 0;
 }
+
 h1 {
   color: var(--blue);
   font-family: "Khula", poppins, sans-serif;
@@ -108,15 +110,16 @@ h1 span {
   width: 12em;
   height: 3.1em;
   border: none;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-.btn-text{
+.btn-text {
   opacity: 100%;
-  margin: -.5em -1.7em -.5em -1.7em;
-  padding: .5em  1.7em  .5em  1.7em;
+  margin: -0.5em -1.7em -0.5em -1.7em;
+  padding: 0.5em 1.7em 0.5em 1.7em;
 }
 .btn a {
   color: var(--white);
@@ -153,14 +156,6 @@ h2 {
   line-height: 1.15em;
   position: relative;
 }
-/* h2::before{
-    content: "About Us";
-    position: absolute;
-    opacity: .1;
-    font-size: 2.5em;
-    top: 0;
-    left: 0;
-} */
 .des-sec {
   color: gray;
   margin: 1em 0;
@@ -171,7 +166,7 @@ h2 {
   font-weight: 400;
   background-color: var(--sky);
   margin-top: 2em;
-  padding: 0.3em .8em;
+  padding: 0.3em 0.8em;
   border: none;
   display: flex;
   justify-content: center;
@@ -182,19 +177,19 @@ h2 {
   color: var(--white);
   text-decoration: none;
   text-align: center;
-  font-size: .8em;
-  padding: 0 .7em;
+  font-size: 0.8em;
+  padding: 0 0.7em;
 }
-.btn:hover{
+.btn:hover {
   background-color: transparent;
   border: 1.5px solid var(--sky);
   color: var(--sky);
-  transition: 0.2s ease-in-out;
+  box-shadow: 0px 0px 2px 0px var(--sky);
+  transition: 0.2s;
 }
-.btn-text:hover{
+.btn-text:hover {
   color: var(--sky);
-  transition: 0.2s ease-in-out;
-
+  transition: 0.2s;
 }
 
 .btn span,
@@ -271,56 +266,38 @@ h4:after {
   text-align: center;
   padding: 1em;
 }
-.images {
-  /* grid-template-columns: 80% ; */
-  transform: scale(.9);
-  /* width: 100%; */
-}
 .images img {
   padding: 1em 5em;
 }
 .image-wraper {
   margin-top: 3em;
 }
-.project-images{
-  margin-top: 5%;
+/* ------Project Images------- */
+.project-images {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   width: 100%;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-  position: relative;
   overflow: hidden;
 }
-.pimg img{
-width: 350px;
-object-fit: cover;
-cursor: pointer;
+.pimg img {
+  width: 370px;
+  display: grid;
+  filter: brightness(0.7);
+  filter: saturate(0.7);
+  place-items: center;
+  overflow: hidden;
 }
-.image-des{
-  font-size: .8em;
-  margin-top: -40%;
-  margin-left: 10%;
-  color: var(--white);
-  width: 250px;
-  text-align: justify;
-  display: none;
-}
-.image-des h5{
-  color: white;
-  font-size: 1rem;
-  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);
+.pimg img:hover {
+  filter: saturate(1);
+  filter: brightness(1);
+  transition: 0.2s all;
 }
 
-.pimg img:hover + .image-des{
-  filter: brightness(1);
-    display: block;
-    transition: .2s ease-in-out;
-}
-.pimg img:hover{
-  filter: brightness(.5);
-  transition: .2s ease-in-out;
-}
+/* ------Project Images End------ */
 .contact-form {
   display: flex;
   flex-wrap: wrap;
@@ -378,26 +355,14 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
-.bluebond {
-  /* font-size: 1.5em; */
-}
 .address,
 .useul-links,
 .download {
   width: 20%;
 }
-.about{
+.about {
   width: 30%;
 }
-/* .address{
-    width: 30%;
-}
-.useul-links{
-    width: 30%;
-}
-.download{
-    width: 30%;
-} */
 
 .about-des {
   font-size: 0.8em;
@@ -474,12 +439,12 @@ footer {
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-columns: 100% ;
+  grid-template-columns: 100%;
 }
 #LanguagesUsed {
   margin-bottom: 5rem;
 }
-.languages{
+.languages {
   width: 100%;
 }
 
@@ -487,386 +452,393 @@ footer {
   font-size: 1em;
 }
 #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none; 
-    background-color: var(--white); 
-    color: var(--sky);
-    cursor: pointer;
-    padding: 0em;
-    width:  2.5em;
-    height: 2.5em;
-    border-radius: 50%;
-    font-size: 1.2em;
-    box-shadow: 10px 10px 20px -10px gray;
-  }
-  
-  #myBtn:hover {
-    box-shadow: 5px 5px 20px -5px rgb(68, 68, 68);
-    transition: .2s;
-  }
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--white);
+  color: var(--sky);
+  cursor: pointer;
+  padding: 0em;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  font-size: 1.2em;
+  box-shadow: 10px 10px 20px -10px gray;
+}
+
+#myBtn:hover {
+  box-shadow: 5px 5px 20px -5px rgb(68, 68, 68);
+  transition: 0.2s;
+}
 @media screen and (max-width: 1024px) {
-  .project-images{
-    margin-top: 5%;
-    width: 100%;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    position: relative;
+  .pimg img {
+    width: 250px;
+  }
+  .nav-links a {
+    padding: 1rem;
   }
   .img {
     width: 50%;
   }
-@media screen and (max-width: 768px) {
-  .project-images{
-    margin-top: 5%;
-    /* margin-bottom: 50%; */
-    width: 100%;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(1, 1fr);
-    position: relative;
-    margin-left: 5%;
+  @media screen and (max-width: 768px) {
+    .logo {
+      margin-left: 0;
+    }
+    /* ---------Project Images------- */
+    .pimg img {
+      width: 335px;
+    }
+
+    /* ------Project Images End----- */
+    .item {
+      transform: scale(0.7);
+    }
+
+    .navbar-wraper {
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 30px 0;
+    }
+    .nav-links {
+      display: block;
+    }
+    .logo p,
+    .nav-links a {
+      padding: 1em 1em;
+    }
+    .nav-links a:hover {
+      background-color: var(--sky);
+      color: var(--white);
+    }
+    .img img {
+      width: 100%;
+    }
+    section {
+      padding: 0 25px;
+    }
+
+    .typo {
+      font-size: 0.8em;
+      opacity: 1;
+    }
+    h1 {
+      line-height: 0.8em;
+    }
+    .about-typo {
+      font-size: 0.8em;
+    }
+    .card-wraper {
+      flex-wrap: wrap;
+    }
+    .card {
+      width: 40%;
+      height: 22rem;
+    }
+    .services {
+      font-size: 0.8em;
+    }
+    .languages {
+      font-size: 0.8em;
+    }
+    .projects {
+      font-size: 0.8em;
+    }
+    .contact {
+      font-size: 0.8em;
+    }
+    .map {
+      height: 250px;
+    }
+    .footer-wraper {
+      padding: 3em 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .address,
+    .useul-links,
+    .download {
+      width: 30%;
+      text-align: center;
+    }
+    .about {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-des {
+      width: 25em;
+    }
+    .links {
+      width: 15rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    .footer-copyright {
+      font-size: 0.8em;
+    }
+    .services .btn {
+      padding: 1em 0;
+    }
+    .download {
+      text-align: left;
+    }
+    .address {
+      text-align: left;
+    }
   }
-  .item{
-    transform: scale(.7);
-  }
-  
-  .navbar-wraper {
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 30px 0;
-  }
-  .nav-links {
-    display: block;
-  }
-  .logo p,
-  .nav-links a {
-    padding: 1em 1em;
-  }
-  .nav-links a:hover {
-    background-color: var(--sky);
-    color: var(--white);
-  }
-  .img img {
-    width: 100%;
-  }
-  section {
-    padding: 0 25px;
+  @media screen and (max-width: 540px) {
+    .image-des {
+      width: 150px;
+    }
+    /* ---------Project Images------- */
+
+    .project-images {
+      margin-left: 9vw;
+    }
+
+    .pimg img {
+      width: 500px;
+    }
+
+    /* ------Project Images End----- */
+    .nav-links {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .topbtn {
+      transform: scale(0.6);
+    }
+    .container-wraper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 3em;
+    }
+    .container {
+      font-size: 0.8rem;
+    }
+    .typo {
+      margin-top: 10rem;
+      flex: 2;
+      width: 100%;
+      text-align: center;
+      opacity: 100%;
+    }
+    h1 {
+      letter-spacing: normal;
+      line-height: 1em;
+    }
+    .typo btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .img {
+      margin: 0;
+      width: 100%;
+    }
+    .img img {
+      width: 100%;
+      opacity: 0.5;
+      opacity: 0.2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .butttton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .images {
+      flex-wrap: wrap;
+    }
+    .images img {
+      margin: 1rem;
+    }
+    .about-typo {
+      text-align: center;
+      width: 100%;
+    }
+    .container-wraper .img2 {
+      width: 80%;
+    }
+    .des-sec {
+      text-align: center;
+    }
+    .card-wraper {
+      flex-direction: column;
+    }
+    .card {
+      width: 80%;
+    }
+    .project-images {
+      flex-direction: column;
+    }
+    .project-images img {
+      width: 80%;
+    }
+    .contact-form {
+      flex-direction: column;
+      position: relative;
+    }
+    .contact-form img {
+      width: 80%;
+      position: absolute;
+      z-index: 0;
+      opacity: 0.2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-wraper {
+      flex-direction: column;
+    }
+    .address,
+    .useul-links,
+    .download {
+      width: 100%;
+      text-align: center;
+    }
+    form {
+      width: 70%;
+    }
   }
 
-  .typo {
-    font-size: 0.8em;
-    opacity: 1;
-  }
-  h1 {
-    line-height: 0.8em;
-  }
-  .about-typo {
-    font-size: 0.8em;
-  }
-  .card-wraper {
-    flex-wrap: wrap;
-  }
-  .card {
-    width: 40%;
-    height: 22rem;
-  }
-  .services {
-    font-size: 0.8em;
-  }
-  .languages {
-    font-size: 0.8em;
-  }
-  .projects {
-    font-size: 0.8em;
-  }
-  .contact {
-    font-size: 0.8em;
-  }
-  .map {
-    height: 250px;
-  }
-  .footer-wraper {
-    padding: 3em 25px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
+  @media screen and (max-width: 425px) {
+    /* ---------Project Images------- */
 
-  .address,
-  .useul-links,
-  .download {
-    width: 30%;
-    text-align: center;
-  }
-  .about {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .about-des {
-    width: 25em;
-  }
-  .links {
-    width: 15rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .footer-copyright {
-    font-size: 0.8em;
-  }
-  .services .btn {
-    padding: 1em 0;
-  }
-  .download {
-    text-align: left;
-  }
-  .address {
-    text-align: left;
-  }
-}
-@media screen and (max-width: 540px) {
-  .image-des{
-    width: 150px;
-  }.project-images{
-    margin-left: 10%;
-  }
-  .nav-links{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .topbtn{
-    transform: scale(.6);
-  }
-  /* .images {
-    transform: scale(.8);
-  } */
-  .container-wraper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 3em;
-  }
-  .container {
-    font-size: 0.8rem;
-  }
-  .typo {
-    margin-top: 10rem;
-    flex: 2;
-    width: 100%;
-    text-align: center;
-    opacity: 100%;
-  }
-  h1 {
-    letter-spacing: normal;
-    line-height: 1em;
-  }
-  .typo btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .img {
-    margin: 0;
-    width: 100%;
-  }
-  .img img {
-    width: 100%;
-    opacity: 0.5;
-    /* filter: blur(5px); */
-    opacity: 0.2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .butttton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .images {
-    flex-wrap: wrap;
-  }
-  .images img {
-    margin: 1rem;
-  }
-  .about-typo {
-    text-align: center;
-    width: 100%;
-  }
-  .container-wraper .img2 {
-    width: 80%;
-  }
-  .des-sec {
-    text-align: center;
-  }
-  .card-wraper {
-    flex-direction: column;
-  }
-  .card {
-    width: 80%;
-  }
-  .project-images {
-    flex-direction: column;
-  }
-  .project-images img {
-    width: 80%;
-  }
-  .contact-form {
-    flex-direction: column;
-    position: relative;
-  }
-  .contact-form img {
-    width: 80%;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer-wraper {
-    flex-direction: column;
-  }
-  .address,
-  .useul-links,
-  .download {
-    width: 100%;
-    text-align: center;
-  }
-  form {
-    width: 70%;
-  }
-}
+    /* ------Project Images End----- */
+    section {
+      overflow: hidden;
+    }
+    .navbar-wraper {
+      padding: 3rem 0;
+    }
+    .logo {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      left: 2rem;
+      top: 2rem;
+    }
+    .logo p {
+      margin: 0;
+      padding: 0;
+    }
 
-@media screen and (max-width: 425px) {
-  section{
-    overflow: hidden;
-  }
- .navbar-wraper{
-    padding: 3rem 0;
-  }
-  .logo{
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 2rem;
-    top: 2rem;
-  }
-  .logo p{
-    margin: 0;
-    padding: 0;
-  }
-  
-  #toggle-btn{
-    display: flex;
-    position: absolute;
-    right: 2rem;
-    top: 2rem;
-  }
-  .card img{
-    transform: scale(.7);
-  }
-  .card-des{
-    width: 75%;
-    padding-bottom: 1rem ;
-  }
-  #LanguagesUsed{
-    margin: 0;
-  }
-  .nav-links{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: none;
-  }
-  .nav-links.active {
-   display: flex;
-    margin-top: 3rem;
-  }
-  .nav-links a{
-    width: 100%;
-    text-align: center;
-  }
-  .container {
-    font-size: 0.5em;
-  }
-  .img{
-    margin-top: 15%;
-    width: 150%;
-    overflow: hidden;
-  }
-  .typo {
-    margin-top:  15%;
-    z-index: 1;
-  }
-  .typo h1{
-   font-size: 2.5rem;
-  }
-  .des{
-    font-size: .9rem;
-  }
-  .btn{
-    /* transform: scale(2); */
-    font-size: 1rem;
-  }
-  .about-typo{
-    font-size: .8rem;
-  }
-  .img2{
-    transform: scale(1.5);
-    margin: 3rem 0;
-  }
-  .btn-sec{
-    transform: scale(1.2);
-  }
-  .card{
-    height: auto;
-  }
-  .btn{
-   transform: scale(0.7);
-  }
-  form{
-    z-index: 1;
-  }
- .address, .useul-links, .download{
-   text-align: center;
-
- }
- /* .address h5, .useul-links h5, .download h5{
+    #toggle-btn {
+      display: flex;
+      position: absolute;
+      color: var(--white);
+      right: 2rem;
+      top: 2rem;
+    }
+    .card img {
+      transform: scale(0.7);
+    }
+    .card-des {
+      width: 75%;
+      padding-bottom: 1rem;
+    }
+    #LanguagesUsed {
+      margin: 0;
+    }
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+    .nav-links.active {
+      display: flex;
+      margin-top: 3rem;
+    }
+    .nav-links a {
+      width: 100%;
+      text-align: center;
+    }
+    .container {
+      font-size: 0.5em;
+    }
+    .img {
+      margin-top: 15%;
+      width: 150%;
+      overflow: hidden;
+    }
+    .typo {
+      margin-top: 15%;
+      z-index: 1;
+    }
+    .typo h1 {
+      font-size: 2.5rem;
+    }
+    .des {
+      font-size: 0.9rem;
+    }
+    .btn {
+      /* transform: scale(2); */
+      font-size: 1rem;
+    }
+    .about-typo {
+      font-size: 0.8rem;
+    }
+    .img2 {
+      transform: scale(1.5);
+      margin: 3rem 0;
+    }
+    .btn-sec {
+      transform: scale(1.2);
+    }
+    .card {
+      height: auto;
+    }
+    .btn {
+      transform: scale(0.7);
+    }
+    form {
+      z-index: 1;
+    }
+    .address,
+    .useul-links,
+    .download {
+      text-align: center;
+    }
+    /* .address h5, .useul-links h5, .download h5{
   text-align: center;
 } */
-  .des-sec{
-    font-size: .8rem;
-    text-align: justify;
-    font-weight: 400;
+    .des-sec {
+      font-size: 0.8rem;
+      text-align: justify;
+      font-weight: 400;
+    }
+    .projects h3 {
+      font-size: 4em;
+    }
+    .contact-section {
+      font-size: 0.6em;
+    }
+    .about-des {
+      width: 80%;
+    }
+    .footer-copyright {
+      font-size: 0.6em;
+    }
+    .card-des {
+      font-size: 0.6rem;
+    }
   }
-  .projects h3 {
-    font-size: 4em;
-  }
-  .contact-section {
-    font-size: 0.6em;
-  }
-  .about-des {
-    width: 80%;
-  }
-  .footer-copyright {
-    font-size: 0.6em;
-  }
-  .card-des{
-    font-size: .6rem;
-  }
-}
 }
