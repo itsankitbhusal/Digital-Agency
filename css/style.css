@@ -302,30 +302,10 @@ h4:after {
 width: 350px;
 object-fit: cover;
 cursor: pointer;
-}
-.image-des{
-  font-size: .8em;
-  margin-top: -40%;
-  margin-left: 10%;
-  color: var(--white);
-  width: 250px;
-  text-align: justify;
-  display: none;
-}
-.image-des h5{
-  color: white;
-  font-size: 1rem;
-  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);
-}
-
-.pimg img:hover + .image-des{
-  filter: brightness(1);
-    display: block;
-    transition: .2s ease-in-out;
+filter: brightness(.8);
 }
 .pimg img:hover{
-  filter: brightness(.5);
+  filter: brightness(1);
   transition: .2s ease-in-out;
 }
 .contact-form {
