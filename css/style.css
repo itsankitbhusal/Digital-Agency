@@ -290,6 +290,7 @@ h4:after {
   display: flex;
   column-count: 3;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 .pimg img{
 width: 350px;
