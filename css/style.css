@@ -40,6 +40,7 @@
   transition: .2s;
   opacity: .7;
   transition: 0.2s;
+  background-color: #0095e7;
 }
 .nav-links a {
   font-weight: 600;
