@@ -300,6 +300,8 @@ filter: brightness(.8);
 }
 .pimg img:hover{
   filter: brightness(1);
+  transform: scale(1.05);
+  overflow: hidden;
   transition: .2s;
 }
 /* ------------------ */
