@@ -636,6 +636,7 @@ footer {
     margin-left: 10%;
   }
   .pimg img{
+    height: 50vh;
     width: 75vw;
     overflow: hidden;
   }
