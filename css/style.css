@@ -57,6 +57,7 @@
   cursor: pointer;
   opacity: .7;
   transition: 0.2s;
+  background-color: #0095e7;
 }
 #toggle-btn{
   position: absolute;
