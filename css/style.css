@@ -637,6 +637,7 @@ footer {
   }
   .pimg img{
     width: 75vw;
+    overflow: hidden;
   }
   .nav-links{
     width: 100%;
