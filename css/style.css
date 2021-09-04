@@ -41,6 +41,9 @@
   opacity: .7;
   transition: 0.2s;
 }
+.logo{
+  margin-left: -2rem;
+}
 .nav-links a {
   font-weight: 600;
   text-decoration: none;
