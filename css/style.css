@@ -287,11 +287,12 @@ h4:after {
 }
 /* /////////////////////////// */
 .project-image-wraper{
+  margin-top: 2rem;
   display: grid;
   place-items: center;
 }
 .project-images{
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   column-count: 3;
   flex-wrap: wrap;
