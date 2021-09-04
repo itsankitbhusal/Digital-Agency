@@ -110,6 +110,7 @@ h1 span {
   width: 12em;
   height: 3.1em;
   border: none;
+  border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
