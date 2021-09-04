@@ -48,7 +48,7 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--white);
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   background-color: transparent;
 }
 /* button{
@@ -524,6 +524,9 @@ footer {
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
+  }
+  .nav-links a{
+    padding: 1rem;
   }
   .img {
     width: 50%;
