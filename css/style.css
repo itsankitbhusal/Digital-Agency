@@ -521,19 +521,11 @@ footer {
   .project-image-wraper{
     margin-top: 2rem;
   }
-  .pimg img{
-    width: 50vw;
-    /* height: 3vh; */
-  }
   .project-images{
     margin-top: 1rem;
-    /* margin-bottom: 50%; */
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    column-count: 2;
-    position: relative;
-    margin-left: 5%;
   }
   .item{
     transform: scale(.7);
