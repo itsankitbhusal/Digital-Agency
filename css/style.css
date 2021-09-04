@@ -521,6 +521,10 @@ footer {
   .project-image-wraper{
     margin-top: 2rem;
   }
+  .pimg img{
+    width: 50vw;
+    /* height: 3vh; */
+  }
   .project-images{
     margin-top: 1rem;
     /* margin-bottom: 50%; */
