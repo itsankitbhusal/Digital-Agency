@@ -507,19 +507,7 @@ footer {
     transition: .2s;
   }
 @media screen and (max-width: 1024px) {
-  .project-image-wraper{
-    margin-top: 2rem;
-  }
-  .project-images{
-    margin-top: 1rem;
-    /* margin-bottom: 50%; */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    column-count: 3;
-    position: relative;
-    margin-left: 5%;
-  }
+
   .nav-links a{
     padding: 1rem;
   }
