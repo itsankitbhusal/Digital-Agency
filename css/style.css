@@ -31,7 +31,7 @@
   font-size: 1.5em;
   font-weight: 700;
   color: var(--blue);
-  padding: 1rem;
+  padding: 1rem 2rem;
   margin-left: 0;
   background-color: transparent;
 }
@@ -40,13 +40,15 @@
   transition: .2s;
   opacity: .7;
   transition: 0.2s;
-  background-color: #0095e7;
+  background-color:var(--sky);
+  color: var(--white);
+  border-radius: 4px;
 }
 .nav-links a {
   font-weight: 600;
   text-decoration: none;
   color: var(--blue);
-  padding: 1rem 2em;
+  padding: 1rem 2rem;
   background-color: transparent;
 }
 /* button{
