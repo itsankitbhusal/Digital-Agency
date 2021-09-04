@@ -529,6 +529,9 @@ footer {
     width: 50%;
   }
 @media screen and (max-width: 768px) {
+  .logo{
+    margin-left: 0;
+  }
   .project-images{
     margin-top: 5%;
     /* margin-bottom: 50%; */
