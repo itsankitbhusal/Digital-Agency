@@ -293,7 +293,7 @@ h4:after {
   column-count: 3;
   flex-wrap: wrap;
   gap: 1rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .pimg img{
 width: 350px;
