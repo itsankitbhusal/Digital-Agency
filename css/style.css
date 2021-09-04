@@ -60,6 +60,7 @@
   transition: 0.2s;
   background-color: var(--sky);
   border-radius: 4px;
+  color: var(--white);
 }
 #toggle-btn{
   position: absolute;
