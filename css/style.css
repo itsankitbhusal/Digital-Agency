@@ -785,6 +785,7 @@ footer {
   #toggle-btn{
     display: flex;
     position: absolute;
+    color: var(--white);
     right: 2rem;
     top: 2rem;
   }
