@@ -46,8 +46,7 @@
   font-weight: 600;
   text-decoration: none;
   color: var(--blue);
-  padding: 1em 2em;
-  padding-right: 0;
+  padding: 1rem 2em;
   background-color: transparent;
 }
 /* button{
