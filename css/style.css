@@ -31,19 +31,14 @@
   font-size: 1.5em;
   font-weight: 700;
   color: var(--blue);
-  margin: 1rem;
   padding: 1rem 2rem;
   margin-left: 0;
   background-color: transparent;
 }
 .logo p:hover {
   cursor: pointer;
-  transition: .2s;
   opacity: .7;
   transition: 0.2s;
-  background-color:var(--sky);
-  color: var(--white);
-  border-radius: 4px;
 }
 .nav-links a {
   font-weight: 600;
@@ -60,7 +55,7 @@
   opacity: .7;
   transition: 0.2s;
   background-color: var(--sky);
-  border-radius: 4px;
+  border-radius: 3px;
   color: var(--white);
 }
 #toggle-btn{
