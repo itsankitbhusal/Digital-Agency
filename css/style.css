@@ -294,6 +294,10 @@ h4:after {
   gap: 1rem;
   /* overflow: hidden; */
 }
+.pimg{
+  height: 25vh;
+  overflow: hidden;
+}
 .pimg img{
 width: 25vw;
 object-fit: cover;
