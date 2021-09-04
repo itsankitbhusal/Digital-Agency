@@ -635,6 +635,9 @@ footer {
   }.project-images{
     margin-left: 10%;
   }
+  .pimg img{
+    width: 75vw;
+  }
   .nav-links{
     width: 100%;
     display: flex;
