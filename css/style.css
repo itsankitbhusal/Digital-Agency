@@ -306,7 +306,7 @@ filter: brightness(.8);
 }
 .pimg img:hover{
   filter: brightness(1);
-  transition: .2s ease-in-out;
+  transition: .2s;
 }
 .contact-form {
   display: flex;
