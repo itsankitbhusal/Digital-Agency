@@ -192,6 +192,7 @@ h2 {
   background-color: transparent;
   border: 1.5px solid var(--sky);
   color: var(--sky);
+  box-shadow: 0px 0px 2px 0px var(--sky);
   transition: 0.2s ease-in-out;
 }
 .btn-text:hover{
