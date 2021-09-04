@@ -640,6 +640,10 @@ footer {
     width: 75vw;
     overflow: hidden;
   }
+.pimg img:hover{
+  filter: brightness(1);
+  transition: .2s;
+}
   .nav-links{
     width: 100%;
     display: flex;
