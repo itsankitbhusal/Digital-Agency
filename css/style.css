@@ -31,7 +31,7 @@
   font-size: 1.5em;
   font-weight: 700;
   color: var(--blue);
-  margin: 1em;
+  padding: 1rem;
   margin-left: 0;
   background-color: transparent;
 }
@@ -57,6 +57,7 @@
   opacity: .7;
   transition: 0.2s;
   background-color: #0095e7;
+  border-radius: 3px;
 }
 #toggle-btn{
   position: absolute;
