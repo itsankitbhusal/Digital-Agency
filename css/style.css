@@ -368,7 +368,9 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
-
+.bluebond {
+  /* font-size: 1.5em; */
+}
 .address,
 .useul-links,
 .download {
@@ -498,6 +500,14 @@ footer {
     transition: .2s;
   }
 @media screen and (max-width: 1024px) {
+  .project-images{
+    margin-top: 5%;
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
   .nav-links a{
     padding: 1rem;
   }
@@ -507,6 +517,16 @@ footer {
 @media screen and (max-width: 768px) {
   .logo{
     margin-left: 0;
+  }
+  .project-images{
+    margin-top: 5%;
+    /* margin-bottom: 50%; */
+    width: 100%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    position: relative;
+    margin-left: 5%;
   }
   .item{
     transform: scale(.7);
