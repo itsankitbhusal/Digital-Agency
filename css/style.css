@@ -190,7 +190,7 @@ h2 {
 }
 .btn:hover{
   background-color: transparent;
-  border: 1.5px solid var(--sky);
+  /* border: 1.5px solid var(--sky); */
   color: var(--sky);
   box-shadow: 0px 0px 2px 0px var(--sky);
   transition: 0.2s;
