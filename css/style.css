@@ -516,17 +516,7 @@ footer {
   .logo{
     margin-left: 0;
   }
-  /* .project-images{
-    margin-top: 5%;
-    /* margin-bottom: 50%; */
-    width: 100%;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(1, 1fr);
-    position: relative;
-    margin-left: 5%;
-  } 
-  */
+  
   .item{
     transform: scale(.7);
   }
