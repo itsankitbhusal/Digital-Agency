@@ -284,10 +284,12 @@ h4:after {
 }
 .image-wraper {
   margin-top: 3em;
+}
+/* /////////////////////////// */
+.project-image-wraper{
   display: grid;
   place-items: center;
 }
-/* /////////////////////////// */
 .project-images{
   margin-top: 2rem;
   display: flex;
