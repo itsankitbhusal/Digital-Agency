@@ -287,14 +287,9 @@ h4:after {
 }
 /* /////////////////////////// */
 .project-images{
-  margin-top: 5%;
-  width: 100%;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  position: relative;
-  overflow: hidden;
+  display: flex;
+  column-count: 3;
+  flex-wrap: wrap;
 }
 .pimg img{
 width: 350px;
