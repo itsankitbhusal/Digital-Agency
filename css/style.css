@@ -284,6 +284,8 @@ h4:after {
 }
 .image-wraper {
   margin-top: 3em;
+  display: grid;
+  place-items: center;
 }
 /* /////////////////////////// */
 .project-images{
