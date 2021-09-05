@@ -845,3 +845,9 @@ footer {
     }
   }
 }
+@media screen and (max-width: 425px){
+  .typo h1{
+    font-size: 2rem;
+
+  }
+}
