@@ -600,6 +600,9 @@ footer {
     }
   }
   @media screen and (max-width: 540px) {
+    .typo br{
+      display: none;
+    }
     .image-des {
       width: 150px;
     }
