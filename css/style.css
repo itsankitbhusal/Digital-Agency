@@ -43,6 +43,9 @@
 .logo {
   margin-left: -2rem;
 }
+.nav-links{
+  margin-right: -2rem;
+}
 .nav-links a {
   font-weight: 600;
   text-decoration: none;
