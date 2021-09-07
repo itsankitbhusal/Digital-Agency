@@ -479,13 +479,19 @@ footer {
 }
 @media screen and (max-width: 1024px) {
   .pimg img {
-    width: 250px;
+    width: 25vw;
   }
   .nav-links a {
     padding: 1rem;
   }
   .img {
     width: 50%;
+  }
+  @media screen and (max-width: 928px){
+    .pimg img{
+      width: 38vw;
+    }
+    
   }
   @media screen and (max-width: 768px) {
     .logo {
@@ -597,6 +603,14 @@ footer {
     }
     .address {
       text-align: left;
+    }
+  }
+  @media screen and (max-width: 540px){
+    .pimg img{
+      width: 100%;
+    }
+    .project-images{
+      justify-content: center;
     }
   }
   @media screen and (max-width: 540px) {
