@@ -14,8 +14,6 @@
   min-width: 0;
   scroll-behavior: smooth;
 }
-@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 .navbar-wraper {
   font-family: poppins, sans-serif;
   display: flex;
@@ -43,7 +41,7 @@
 .logo {
   margin-left: -2rem;
 }
-.nav-links{
+.nav-links {
   margin-right: -2rem;
 }
 .nav-links a {
@@ -53,7 +51,6 @@
   padding: 1rem 1.5rem;
   background-color: transparent;
 }
-
 .nav-links a:hover {
   cursor: pointer;
   opacity: 0.7;
@@ -90,10 +87,9 @@ section {
   position: absolute;
   left: 0;
 }
-
 h1 {
   color: var(--blue);
-  font-family: "Khula", poppins, sans-serif;
+  font-family: Khula, poppins, sans-serif;
   font-size: 4em;
   font-weight: 800;
   line-height: 0.9em;
@@ -153,7 +149,7 @@ h1 span {
 h2 {
   margin-top: 1em;
   color: var(--sky);
-  font-family: "Khula", poppins, sans-serif;
+  font-family: Khula, poppins, sans-serif;
   font-size: 3em;
   font-weight: 800;
   line-height: 1.15em;
@@ -165,38 +161,18 @@ h2 {
   font-weight: 500;
   text-align: justify;
 }
-.btn-sec {
-  font-weight: 400;
-  background-color: var(--sky);
-  margin-top: 2em;
-  padding: 0.3em 0.8em;
-  border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-.btn-sec a {
-  color: var(--white);
-  text-decoration: none;
-  text-align: center;
-  font-size: 0.8em;
-  padding: 0 0.7em;
-}
 .btn:hover {
   background-color: transparent;
   border: 1.5px solid var(--sky);
   color: var(--sky);
-  box-shadow: 0px 0px 2px 0px var(--sky);
+  box-shadow: 0 0 2px 0 var(--sky);
   transition: 0.2s;
 }
 .btn-text:hover {
   color: var(--sky);
   transition: 0.2s;
 }
-
-.btn span,
-.btn-sec span {
+.btn span {
   margin: 0.5em;
 }
 h3 {
@@ -234,7 +210,6 @@ h4:after {
   right: 50%;
   transform: translate(-50%, 50%);
 }
-
 .card {
   display: flex;
   flex-direction: column;
@@ -245,7 +220,7 @@ h4:after {
   width: 30%;
   position: relative;
   border-radius: 0.5em;
-  background-color: white;
+  background-color: #fff;
   height: 25rem;
 }
 .card span {
@@ -256,12 +231,9 @@ h4:after {
 .card span img {
   width: 80%;
 }
-.card button {
-  margin-bottom: 2em;
-}
 .card:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px rgb(214, 214, 214);
+  box-shadow: 0 0 20px #d6d6d6;
   transition: 0.2s;
 }
 .card-des {
@@ -269,38 +241,32 @@ h4:after {
   text-align: center;
   padding: 1em;
 }
-.images img {
-  padding: 1em 5em;
-}
-.image-wraper {
-  margin-top: 3em;
-}
-/* ------Project Images------- */
-.project-images {
-  margin-top: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
-  overflow: hidden;
-}
-.pimg img {
-  width: 370px;
+.project-image-wraper {
   display: grid;
-  filter: brightness(0.7);
-  filter: saturate(0.7);
   place-items: center;
-  overflow: hidden;
+  margin: 0 2rem;
+  margin-top: 2rem;
 }
-.pimg img:hover {
+.project-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.img-row {
+  display: grid;
+  align-items: center;
+}
+.img-row img {
+  margin: 4px 0;
+  width: 27.7vw;
+  border-radius: 3px;
+  filter: saturate(0.7);
+}
+.img-row img:hover {
   filter: saturate(1);
-  filter: brightness(1);
   transition: 0.2s all;
 }
-
-/* ------Project Images End------ */
 .contact-form {
   display: flex;
   flex-wrap: wrap;
@@ -320,11 +286,13 @@ form input {
   padding: 0.6em;
   background-color: transparent;
   border: 1px solid var(--sky);
+  border-radius: 3px;
 }
 form textarea {
   margin-top: 1em;
   background-color: transparent;
   border: 1px solid var(--sky);
+  padding: .6rem;
 }
 .submit {
   margin-top: 1em;
@@ -336,9 +304,6 @@ form textarea {
 }
 textarea {
   resize: none;
-}
-::placeholder {
-  padding: 1em;
 }
 .contact-section {
   padding-bottom: 3em;
@@ -359,14 +324,13 @@ textarea {
   justify-content: space-between;
 }
 .address,
-.useul-links,
-.download {
+.download,
+.useul-links {
   width: 20%;
 }
 .about {
   width: 30%;
 }
-
 .about-des {
   font-size: 0.8em;
   color: gray;
@@ -384,7 +348,7 @@ textarea {
 }
 h5 {
   font-size: 1em;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--sky);
   margin: 1em 0;
 }
@@ -425,7 +389,7 @@ footer {
 }
 .footer-copyright {
   background-color: var(--sky);
-  color: white;
+  color: #fff;
   padding: 2em;
   display: flex;
   justify-content: center;
@@ -450,7 +414,6 @@ footer {
 .languages {
   width: 100%;
 }
-
 .services {
   font-size: 1em;
 }
@@ -461,52 +424,51 @@ footer {
   right: 30px;
   z-index: 99;
   border: none;
-  outline: none;
+  outline: 0;
   background-color: var(--white);
   color: var(--sky);
   cursor: pointer;
-  padding: 0em;
+  padding: 0;
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%;
   font-size: 1.2em;
   box-shadow: 10px 10px 20px -10px gray;
 }
-
 #myBtn:hover {
-  box-shadow: 5px 5px 20px -5px rgb(68, 68, 68);
+  box-shadow: 5px 5px 20px -5px #444;
   transition: 0.2s;
 }
 @media screen and (max-width: 1024px) {
-  .pimg img {
-    width: 25vw;
-  }
   .nav-links a {
     padding: 1rem;
   }
   .img {
     width: 50%;
   }
-  @media screen and (max-width: 928px){
-    .pimg img{
-      width: 38vw;
-    }
-    
-  }
   @media screen and (max-width: 768px) {
     .logo {
       margin-left: 0;
     }
-    /* ---------Project Images------- */
-    .pimg img {
-      width: 335px;
+    .project-images {
+      flex-wrap: wrap;
     }
-
-    /* ------Project Images End----- */
+    .img-row {
+      justify-items: center;
+    }
+    .img-row img {
+      width: 90vw;
+      margin: 1rem;
+    }
+    .nav-links {
+      margin-right: 0;
+    }
+    .logo {
+      margin-left: 0;
+    }
     .item {
       transform: scale(0.7);
     }
-
     .navbar-wraper {
       flex-wrap: wrap;
       flex-direction: column;
@@ -529,7 +491,6 @@ footer {
     section {
       padding: 0 25px;
     }
-
     .typo {
       font-size: 0.8em;
       opacity: 1;
@@ -568,10 +529,9 @@ footer {
       justify-content: center;
       align-items: center;
     }
-
     .address,
-    .useul-links,
-    .download {
+    .download,
+    .useul-links {
       width: 30%;
       text-align: center;
     }
@@ -595,9 +555,6 @@ footer {
     .footer-copyright {
       font-size: 0.8em;
     }
-    .services .btn {
-      padding: 1em 0;
-    }
     .download {
       text-align: left;
     }
@@ -605,34 +562,18 @@ footer {
       text-align: left;
     }
   }
-  @media screen and (max-width: 540px){
-    .pimg img{
-      width: 100%;
-    }
-    .project-images{
-      justify-content: center;
-    }
-  }
   @media screen and (max-width: 540px) {
-    .typo br{
+    .typo br {
       display: none;
     }
-    .image-des {
-      width: 150px;
-    }
-    /* ---------Project Images------- */
-
     .project-images {
-      margin-left: 9vw;
+      flex-direction: column;
     }
-
-    .pimg img {
-      width: 500px;
+    .project-images img {
+      width: 65vw;
     }
-
-    /* ------Project Images End----- */
     .nav-links {
-      width: 100%;
+      width: 100vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -660,11 +601,6 @@ footer {
       letter-spacing: normal;
       line-height: 1em;
     }
-    .typo btn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
     .img {
       margin: 0;
       width: 100%;
@@ -682,12 +618,6 @@ footer {
       align-items: center;
       justify-content: center;
     }
-    .images {
-      flex-wrap: wrap;
-    }
-    .images img {
-      margin: 1rem;
-    }
     .about-typo {
       text-align: center;
       width: 100%;
@@ -702,12 +632,6 @@ footer {
       flex-direction: column;
     }
     .card {
-      width: 80%;
-    }
-    .project-images {
-      flex-direction: column;
-    }
-    .project-images img {
       width: 80%;
     }
     .contact-form {
@@ -727,23 +651,19 @@ footer {
       flex-direction: column;
     }
     .address,
-    .useul-links,
-    .download {
+    .download,
+    .useul-links {
       width: 100%;
       text-align: center;
     }
     form {
       width: 70%;
     }
-    .btn{
+    .btn {
       font-size: 1rem;
     }
   }
-
   @media screen and (max-width: 425px) {
-    /* ---------Project Images------- */
-
-    /* ------Project Images End----- */
     section {
       overflow: hidden;
     }
@@ -761,7 +681,6 @@ footer {
       margin: 0;
       padding: 0;
     }
-
     #toggle-btn {
       display: flex;
       position: absolute;
@@ -808,12 +727,16 @@ footer {
     }
     .typo h1 {
       font-size: 2.5rem;
+      color: var(--blue);
+    }
+    h1 span {
+      color: var(--blue);
+      font-size: inherit;
     }
     .des {
       font-size: 0.9rem;
     }
     .btn {
-      /* transform: scale(2); */
       font-size: 1rem;
     }
     .about-typo {
@@ -823,26 +746,17 @@ footer {
       transform: scale(1.5);
       margin: 3rem 0;
     }
-    .btn-sec {
-      transform: scale(1.2);
-    }
     .card {
       height: auto;
-    }
-    .btn {
-      transform: scale(0.7);
     }
     form {
       z-index: 1;
     }
     .address,
-    .useul-links,
-    .download {
+    .download,
+    .useul-links {
       text-align: center;
     }
-    /* .address h5, .useul-links h5, .download h5{
-  text-align: center;
-} */
     .des-sec {
       font-size: 0.8rem;
       text-align: justify;
@@ -865,9 +779,8 @@ footer {
     }
   }
 }
-@media screen and (max-width: 425px){
-  .typo h1{
+@media screen and (max-width: 425px) {
+  .typo h1 {
     font-size: 2rem;
-
   }
 }
