@@ -293,6 +293,7 @@ form textarea {
   background-color: transparent;
   border: 1px solid var(--sky);
   padding: .6rem;
+  border-radius: 3px;
 }
 .submit {
   margin-top: 1em;
