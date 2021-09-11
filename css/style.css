@@ -14,6 +14,40 @@
   min-width: 0;
   scroll-behavior: smooth;
 }
+/* -------------------------- */
+.slide-top {
+	-webkit-animation: slide-top 0.5s linear both;
+	        animation: slide-top 0.5s linear both;
+}
+ @-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+
+
+
+
+
+
+
+/* -------------------------- */
 .navbar-wraper {
   font-family: poppins, sans-serif;
   display: flex;
