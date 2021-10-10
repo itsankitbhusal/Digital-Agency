@@ -229,7 +229,7 @@ h4:after {
   align-items: center;
 }
 .card span img {
-  width: 80%;
+  width: 60%;
 }
 .card:hover {
   transform: scale(1.02);
